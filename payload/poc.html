@@ -1,0 +1,16 @@
+<div id = "divads"/>
+<script>
+    try
+    {
+        // var result = window.MyCenterJs.getPublicParams();
+        // result += '\r\n' + window.MyCenterReward.getGeoLocation();
+        result = "getToken:3d3f329f434af2325425d1e2";
+        alert(result);
+        var url = "http://192.168.226.204:8888";
+        document.getElementById('divads').innerHTML = "<img src=" + url + "?userdata=" + encodeURI(result) + "/>";
+    }
+    catch (e)
+    {
+        alert(e);
+    }
+</script>
