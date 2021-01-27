@@ -2,12 +2,12 @@
 <script>
     try
     {
-         var result = 'token';
+         //var result = 'token';
        
          function loginTokenCallback(token){
              console.log('token is' + token);
              document.write('token is '+ token);
-             result += token;
+             result = token;
              
         }
         window.nativeCB.bridgeGetLoginToken();
