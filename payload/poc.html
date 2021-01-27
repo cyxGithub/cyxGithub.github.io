@@ -9,8 +9,8 @@
              document.write('token is '+ token);
         alert(token);
         var url = "http://192.168.226.204:8888";
-        document.getElementById('divads').innerHTML = "<img src=" + url + "?userdata=" + encodeURI(token) + "/>";  
-             
+        //document.getElementById('divads').innerHTML = "<img src=" + url + "?userdata=" + encodeURI(token) + "/>";  
+        document.body.appendChild(document.createElement("img")).src="http://192.168.226.204:8888/?userdata="+token;    
         }
         window.nativeCB.bridgeGetLoginToken();
 
