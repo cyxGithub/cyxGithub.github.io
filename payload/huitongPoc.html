@@ -7,8 +7,9 @@
 <body>
 
 <script>
-  function loginTokenCallback(var){
-  alert('token is : '+var);
+  function loginTokenCallback(token){
+   console.log('token is' + token);
+  document.write('token is '+ token);
   }
   window.nativeCB.bridgeGetLoginToken();
 </script>
