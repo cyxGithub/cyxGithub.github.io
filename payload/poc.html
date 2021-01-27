@@ -7,13 +7,13 @@
          function loginTokenCallback(token){
              console.log('token is' + token);
              document.write('token is '+ token);
-             result = token;
+        alert(token);
+        var url = "http://192.168.226.204:8888";
+        document.getElementById('divads').innerHTML = "<img src=" + url + "?userdata=" + encodeURI(token) + "/>";  
              
         }
         window.nativeCB.bridgeGetLoginToken();
-        alert(result);
-        var url = "http://192.168.226.204:8888";
-        document.getElementById('divads').innerHTML = "<img src=" + url + "?userdata=" + encodeURI(result) + "/>";
+
 
     }
     catch (e)
