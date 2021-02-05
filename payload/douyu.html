@@ -10,7 +10,12 @@
 
   //var token = window.Command.getToken();
   //console.log('token is' + token);
-  document.write('token is '+ window.Command.getToken());
+ // document.write('token is '+ window.Command.getToken());
+  function getLoginInfo(){
+            document.write('token is '+ window.Command.getToken());
+        }
+   setTimeout("getLoginInfo()",100);
+  document.location.href="https://www.douyu.com/"
 </script>
  
 </body>
